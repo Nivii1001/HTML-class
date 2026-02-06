@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Query with Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Image container */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .gallery img {
+            width: 200px; 600px
+            height: 150px;
+            border-radius: 8px;
+        }
+
+        /* Media query for mobile screens */
+        @media screen and (max-width:) {
+            .gallery {
+                flex-direction: column;   /* Images stack vertically */
+                align-items: center;
+            }
+
+            .gallery img {
+                width: 90%;               /* Bigger images on mobile */
+                height: auto;
+            }
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+
+    <h1>Responsive Image Gallery</h1>
+
+    <div class="gallery">
+        <img src="flower1.jpg" alt="Image 1">
+        <img src="flower2.png" alt="Image 2">
+       
+    </div>
+
+    <p>Resize the screen to see the layout change.</p>
+
+</body>
+</html>
